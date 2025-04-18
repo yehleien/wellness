@@ -6,11 +6,19 @@ icon: https://raw.githubusercontent.com/yehleien/wellness/main/wellness-tracker/
 developer: Nick Yehle
 website: https://github.com/yehleien/wellness
 category: Health & Wellness
+dependencies: []
+repo: https://github.com/yehleien/wellness
+support: https://github.com/yehleien/wellness/issues
+port: 3000
+path: ""
+defaultUsername: ""
+defaultPassword: ""
 requirements:
   - docker
   - docker-compose
   - 2GB RAM
   - 10GB storage
+dependencies: []
 permissions:
   - docker
   - network
@@ -22,4 +30,8 @@ ports:
   - 8080:8080  # CockroachDB Admin UI
 volumes:
   - wellness-data:/app/data
-  - cockroach-data:/cockroach/cockroach-data 
+  - cockroach-data:/cockroach/cockroach-data
+scripts:
+  install: scripts/install.sh
+  start: scripts/start.sh
+  stop: scripts/stop.sh 
