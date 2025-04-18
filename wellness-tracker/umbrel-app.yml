@@ -1,0 +1,25 @@
+id: wellness-tracker
+name: Wellness Tracker
+description: A holistic wellness tracking system
+version: 0.1.0
+icon: https://raw.githubusercontent.com/yehleien/wellness/main/wellness-tracker/icon.png
+developer: Nick Yehle
+website: https://github.com/yehleien/wellness
+category: Health & Wellness
+requirements:
+  - docker
+  - docker-compose
+  - 2GB RAM
+  - 10GB storage
+permissions:
+  - docker
+  - network
+  - storage
+ports:
+  - 8000:8000  # Backend API
+  - 3000:3000  # Frontend
+  - 26257:26257  # CockroachDB
+  - 8080:8080  # CockroachDB Admin UI
+volumes:
+  - wellness-data:/app/data
+  - cockroach-data:/cockroach/cockroach-data 
