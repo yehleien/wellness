@@ -1,5 +1,5 @@
-id: wellness
-name: Wellness Apps
+id: "wellness"
+name: "Wellness Apps"
 apps:
   - id: wellness-wellness-tracker
     name: Wellness Tracker
