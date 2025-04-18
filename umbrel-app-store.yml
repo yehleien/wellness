@@ -1,12 +1,18 @@
 id: wellness
 name: Wellness Apps
-description: A collection of wellness tracking applications
 apps:
   - id: wellness-tracker
     name: Wellness Tracker
-    description: A holistic wellness tracking system
-    version: 0.1.0
-    icon: https://raw.githubusercontent.com/yehleien/wellness/main/wellness-tracker/icon.png
+    repo: https://github.com/yehleien/wellness
+    version: "0.1.0"
+    tagline: A holistic wellness tracking system
+    description: >-
+      Track your wellness data from multiple sources in one unified dashboard.
+      Integrates with WHOOP, Apple Health, FoodNoms, and Day One.
     developer: Nick Yehle
-    website: https://github.com/yehleien/wellness
     category: Health & Wellness
+    path: wellness-tracker
+    icon: wellness-tracker/icon.svg
+    port: 3000
+    submitter: yehleien
+    submission_date: 2024-04-18
