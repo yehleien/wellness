@@ -1,7 +1,7 @@
 id: wellness
 name: Wellness Apps
 apps:
-  - id: wellness-tracker
+  - id: wellness-wellness-tracker
     name: Wellness Tracker
     repo: https://github.com/yehleien/wellness
     version: "0.1.0"
@@ -11,8 +11,8 @@ apps:
       Integrates with WHOOP, Apple Health, FoodNoms, and Day One.
     developer: Nick Yehle
     category: Health & Wellness
-    path: wellness-tracker
-    icon: wellness-tracker/icon.svg
+    path: wellness-wellness-tracker
+    icon: wellness-wellness-tracker/icon.svg
     port: 3000
     submitter: yehleien
     submission_date: 2024-04-18
